@@ -1,0 +1,228 @@
+Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello world")
+Hello world
+>>> print(sys.version)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'sys' is not defined
+>>> import sys
+>>> print(sys.version)
+3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)]
+>>> print('Hello, Python!') # this line prints a string
+Hello, Python!
+>>> print("hello world")
+hello world
+>>> print("hello world") # this line prints a string # print('hi')
+hello world
+>>> frint('Hello python")
+  File "<stdin>", line 1
+    frint('Hello python")
+          ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> # try to see built-in error message
+>>> print('hello python')
+hello python
+>>> # try to see built-in error message print("Hello, Python")
+>>> Print("hello python)
+  File "<stdin>", line 1
+    Print("hello python)
+          ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> Print("hello python")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Print' is not defined. Did you mean: 'print'?
+>>> print("This will NOT be printed")
+This will NOT be printed
+>>> print("Hello, world!")
+Hello, world!
+>>> 11
+11
+>>> int(11)
+11
+>>> float(2.13)
+2.13
+>>> float(11)
+11.0
+>>> int(22.23)
+22
+>>> print("Hello, Python 101!")
+Hello, Python 101!
+>>> type(12)
+<class 'int'>
+>>> type(2.14)
+<class 'float'>
+>>> type("Hello< World! And all the motherfucking data scientists")
+<class 'str'>
+>>> type(12.0)
+<class 'float'>
+>>> type(-1)
+<class 'int'>
+>>> type(4)
+<class 'int'>
+>>> type(0)
+<class 'int'>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+KeyboardInterrupt
+>>> type(1.0)
+<class 'float'>
+>>> type(0.7)
+<class 'float'>
+>>> type(0.56)
+<class 'float'>
+>>> sys.float_info
+sys.float_info(max=1.7976931348623157e+308, max_exp=1024, max_10_exp=308, min=2.2250738585072014e-308, min_exp=-1021, min_10_exp=-307, dig=15, mant_dig=53, epsilon=2.220446049250313e-16, radix=2, rounds=1)
+>>> type(2)
+<class 'int'>
+>>> x=2
+>>> float(x(
+... float(x)
+... float(2)
+  File "<stdin>", line 2
+    float(x)
+    ^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> float(2)
+2.0
+>>> float(x)
+2.0
+>>> x=x
+>>> float(x)
+2.0
+>>> 2=x
+  File "<stdin>", line 1
+    2=x
+    ^
+SyntaxError: cannot assign to literal here. Maybe you meant '==' instead of '='?
+>>> type(float(2))
+<class 'float'>
+>>> int(1.1)
+1
+>>> str(1.1)
+'1.1'
+>>> int('1')
+1
+>>> int('1 or 2 people')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: invalid literal for int() with base 10: '1 or 2 people'
+>>> float('1.2')
+1.2
+>>> str(1)
+'1'
+>>> str(1.2(
+...
+...
+...
+... str(1.2)
+... ^Z
+
+  File "<stdin>", line 1
+    str(1.2(
+           ^
+SyntaxError: '(' was never closed
+>>> str(1.2)
+'1.2'
+>>> str('1.2')
+'1.2'
+>>> str("1.12")
+'1.12'
+>>> str("1212)
+  File "<stdin>", line 1
+    str("1212)
+        ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> True
+True
+>>> False
+False
+>>> Yo
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Yo' is not defined
+>>> False
+False
+>>> type(True)
+<class 'bool'>
+>>> type(False)
+<class 'bool'>
+>>> int(True)
+1
+>>> float(True)
+1.0
+>>> bool(1)
+True
+>>> bool(0)
+False
+>>> float(False)
+0.0
+>>> 6//2
+3
+>>> 6/2
+3.0
+>>> 6//2
+3
+>>> 43+60+16+41
+160
+>>> 50-60
+-10
+>>> 5*5
+25
+>>> 25/5
+5.0
+>>> 25//6
+4
+>>> 25/6
+4.166666666666667
+>>> 30+2*6
+42
+>>> (30+2)*60
+1920
+>>> type((30+2)*60)
+<class 'int'>
+>>> 7**&
+  File "<stdin>", line 1
+    7**&
+       ^
+SyntaxError: invalid syntax
+>>> 7**8
+5764801
+>>> 2*2.3
+4.6
+>>> 2**2.3
+4.924577653379664
+>>> x
+2
+>>> y=x/60
+>>> y
+0.03333333333333333
+>>> x=x/60
+>>> x
+0.03333333333333333
+>>> total_min=43+42+57
+>>> total_min
+142
+>>> total_hr=total_min/60
+>>> total_hr
+2.3666666666666667
+>>> total_min=total_min-42
+>>> total_hr
+2.3666666666666667
+>>> x=3+2*2
+>>> x
+7
+>>> y=(3+2)*2
+>>> x*y
+70
+>>> y=(3+2)^2
+>>> y
+7
+>>> z=x+y
+>>> z
+14
